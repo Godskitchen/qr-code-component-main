@@ -17,6 +17,20 @@ body {
   height: 100%;
 }
 
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  white-space: nowrap;
+  border: 0;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%)
+}
+
 .container {
   background-color: $state-300;
   display: flex;
@@ -54,6 +68,7 @@ body {
   
   &__description {
     max-width: size(256px);
+    color: $state-500;
   }
 }
 
