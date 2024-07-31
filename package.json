@@ -1,0 +1,25 @@
+{
+  "name": "qr-code",
+  "version": "1.0.0",
+  "description": "![Design preview for the QR code component coding challenge](./preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass styles/style.scss css/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Godskitchen/qr-code-component-main.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Godskitchen/qr-code-component-main/issues"
+  },
+  "homepage": "https://github.com/Godskitchen/qr-code-component-main#readme",
+  "dependencies": {
+    "sass": "^1.77.8"
+  },
+  "devDependencies": {
+    "htmlhint": "^1.1.4"
+  }
+}

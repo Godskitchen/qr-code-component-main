@@ -1,0 +1,71 @@
+html {
+  font-size: size-desktop($fz-default);
+  height: 100%;
+
+  @media (max-width: 768px) {
+    font-size: size-mobile($fz-default);
+  }
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  font-size: size(15px);
+  line-height: 1.4;
+  letter-spacing: size(0.2px);
+  color: $state-900;
+  height: 100%;
+}
+
+.container {
+  background-color: $state-300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.frame {
+  display: flex;
+  flex-direction: column;
+  gap: size(24px);
+  background-color: $white-100;
+  padding: size(16px);
+  padding-bottom: size(40px);
+  border-radius: size(20px);
+  
+}
+
+.text {
+  display: flex;
+  padding:  0 size(16px);
+  flex-direction: column;
+  align-items: center;
+  gap: size(16px);
+  text-align: center;
+
+  &__title {
+    font-weight: 700;
+    font-size: size(22px);
+    line-height: 1.2;
+    letter-spacing: 0;
+    max-width: size(256px);
+  }
+  
+  &__description {
+    max-width: size(256px);
+  }
+}
+
+.qr-code {
+  width: size(288px);
+  height: size(288px);
+
+  &__image {
+    border-radius: size(10px);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
