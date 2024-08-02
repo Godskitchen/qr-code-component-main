@@ -10,7 +10,8 @@ Use a better box model (opinionated).
 ::before,
 ::after {
   box-sizing: border-box;
-  margin: 0;
+  margin: 0; /* Remove the margin in all browsers. */
+  padding: 0; /* Remove the padding in all browsers. */
 }
 
 html {
@@ -27,8 +28,7 @@ Sections
 ========
 */
 body {
-  margin: 0; /* Remove the margin in all browsers. */
-  padding: 0; /* Remove the padding in all browsers. */
+  -webkit-font-smoothing: antialiased;
 }
 
 /*
@@ -232,14 +232,26 @@ summary {
   display: list-item;
 }
 
-html {
-  font-size: 1.1111111111vw;
-  height: 100%;
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
 }
-@media (max-width: 768px) {
-  html {
-    font-size: 4.2666666667vw;
-  }
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+html {
+  height: 100%;
+  font-size: 16px;
 }
 
 body {

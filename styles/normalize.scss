@@ -13,7 +13,8 @@ Use a better box model (opinionated).
 ::before,
 ::after {
 	box-sizing: border-box;
-  margin: 0;
+  margin: 0; /* Remove the margin in all browsers. */
+  padding: 0; /* Remove the padding in all browsers. */
 }
 
 html {
@@ -39,8 +40,7 @@ Sections
 */
 
 body {
-	margin: 0; /* Remove the margin in all browsers. */
-  padding: 0; /* Remove the padding in all browsers. */
+  -webkit-font-smoothing: antialiased;
 }
 
 /*
@@ -273,4 +273,20 @@ Add the correct display in Chrome and Safari.
 
 summary {
 	display: list-item;
+}
+
+
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+#root, #__next {
+  isolation: isolate;
 }
