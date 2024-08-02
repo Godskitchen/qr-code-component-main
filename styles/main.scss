@@ -1,10 +1,6 @@
 html {
-  font-size: size-desktop($fz-default);
   height: 100%;
-
-  @media (max-width: 768px) {
-    font-size: size-mobile($fz-default);
-  }
+  font-size: 16px;
 }
 
 body {
